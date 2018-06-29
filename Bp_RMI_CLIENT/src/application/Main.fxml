@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+   <children>
+      <Label layoutX="311.0" layoutY="142.0" prefHeight="30.0" prefWidth="59.0" text="Login" textFill="#252324">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="311.0" layoutY="225.0" prefHeight="30.0" prefWidth="111.0" text="Password">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="logintxt" focusColor="#050e28" layoutX="307.0" layoutY="181.0" maxWidth="161.0" minWidth="161.0" prefHeight="37.0" prefWidth="161.0" promptText="USER ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="168.0" layoutY="21.0" prefHeight="99.0" prefWidth="377.0" text="s'authentifier" textFill="#0730e3" underline="true">
+         <font>
+            <Font name="Algerian" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="248.0" layoutY="335.0" onAction="#getConnexion" prefHeight="57.0" prefWidth="161.0" style="-fx-background-color: #0fe0d5;" text="Connexion" textFill="#4210de">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="passwordtxt" layoutX="300.0" layoutY="255.0" maxWidth="161.0" minWidth="161.0" prefHeight="37.0" prefWidth="161.0" promptText="PASSWORD">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="219.0" fitWidth="232.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../admin.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

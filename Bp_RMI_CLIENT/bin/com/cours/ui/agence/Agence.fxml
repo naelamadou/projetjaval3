@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="767.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cours.ui.agence.AgenceController">
+   <children>
+      <ImageView fitHeight="571.0" fitWidth="767.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../login-bg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="304.0" layoutY="101.0" prefHeight="30.0" prefWidth="121.0" text="code " textFill="#09a4f2">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codeagtxt" layoutX="305.0" layoutY="131.0" prefHeight="25.0" prefWidth="112.0" />
+      <Label layoutX="301.0" layoutY="163.0" prefHeight="30.0" prefWidth="150.0" text="Adresse " textFill="#0891e1">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adrsagtxt" layoutX="305.0" layoutY="200.0" prefHeight="25.0" prefWidth="112.0" />
+      <TextField fx:id="telagtxt" layoutX="305.0" layoutY="277.0" prefHeight="25.0" prefWidth="112.0" />
+      <JFXButton buttonType="RAISED" layoutX="185.0" layoutY="345.0" onAction="#EnregistrerAg" prefHeight="44.0" prefWidth="165.0" text="Enregistrer" textFill="#0b18ea">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="393.0" layoutY="345.0" onAction="#annuler" prefHeight="44.0" prefWidth="135.0" text="Annuler" textFill="#0b18ea">
+         <font>
+            <Font name="Algerian" size="21.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="159.0" layoutY="30.0" prefHeight="45.0" prefWidth="395.0" text="Enregistrer une Agence" textFill="#0e97e1">
+         <font>
+            <Font name="Algerian" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="301.0" layoutY="240.0" prefHeight="30.0" prefWidth="150.0" text="Telephone" textFill="#12a1ee">
+         <font>
+            <Font name="Algerian" size="20.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="767.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Menu">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#retour" text="precedent" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

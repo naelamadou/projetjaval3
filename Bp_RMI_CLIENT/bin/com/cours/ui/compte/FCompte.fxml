@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="1280.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cours.ui.compte.CompteController">
+   <children>
+      <ImageView fitHeight="795.0" fitWidth="1480.0" layoutX="-146.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../login-bg.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-5.0" prefHeight="31.0" prefWidth="1480.0" AnchorPane.bottomAnchor="1351.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-5.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="200.0" layoutY="44.0" prefHeight="23.0" prefWidth="96.0" text="Nom client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nomclitxt" layoutX="198.0" layoutY="75.0" maxWidth="149.0" minWidth="149.0" prefHeight="23.0" prefWidth="149.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="15.0" layoutY="110.0" prefHeight="23.0" prefWidth="117.0" text="Prenom client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="prenomclitxt" layoutX="15.0" layoutY="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="200.0" layoutY="110.0" prefHeight="23.0" prefWidth="117.0" text="Adresse client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="adrssclitxt" layoutX="198.0" layoutY="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="15.0" layoutY="170.0" prefHeight="23.0" prefWidth="117.0" text="Email client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="emailclitxt" layoutX="14.0" layoutY="200.0" maxWidth="149.0" minWidth="149.0" prefHeight="31.0" prefWidth="149.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="203.0" layoutY="170.0" prefHeight="23.0" prefWidth="140.0" text="Telephone client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="telephoneclitxt" layoutX="199.0" layoutY="202.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="11.0" layoutY="252.0" prefHeight="23.0" prefWidth="158.0" text="Salaire actuel client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="salactutxt" layoutX="14.0" layoutY="279.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="200.0" layoutY="252.0" prefHeight="23.0" prefWidth="158.0" text="Profession client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="profession_cli" layoutX="199.0" layoutY="279.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="15.0" layoutY="337.0" prefHeight="23.0" prefWidth="197.0" text="Information employeur" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="infoemplotxt" layoutX="15.0" layoutY="364.0" maxWidth="336.0" minWidth="188.0" prefHeight="86.0" prefWidth="336.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <JFXButton fx:id="ajouterCompteBtn" buttonType="RAISED" layoutX="15.0" layoutY="481.0" style="-fx-background-color: skyblue;" text="Enregistrer" textFill="#1d1e1e">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="140.0" layoutY="510.0" onAction="#modifClient" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: skyblue;" text="Modifier" textFill="#1d1e1e">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="265.0" layoutY="540.0" onAction="#deleteClient" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: skyblue;" text="Supprimer" textFill="#1d1e1e">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="929.0" layoutY="31.0" onAction="#Retourd" style="-fx-background-color: black;" text="Retour" textFill="#0ceff5">
+         <font>
+            <Font name="Algerian" size="13.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="anchorcompteCourant" layoutX="590.0" layoutY="349.0" prefHeight="170.0" prefWidth="307.0">
+         <children>
+            <JFXTextField fx:id="agiotxt" layoutX="155.0" layoutY="14.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+            <JFXTextField fx:id="raisonsocialtbx" layoutX="155.0" layoutY="56.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+            <JFXTextField fx:id="adressetbx" layoutX="155.0" layoutY="97.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+            <JFXTextField fx:id="numidemploytbx" layoutX="154.0" layoutY="139.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+            <Label fx:id="agiolabel" layoutY="18.0" prefHeight="23.0" prefWidth="140.0" text="Agio" textFill="#0fb3d1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="numidlabel" layoutX="3.0" layoutY="143.0" prefHeight="23.0" prefWidth="133.0" text="Num Identifie" textFill="#0fb3d1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="adresselabel" layoutX="3.0" layoutY="101.0" prefHeight="23.0" prefWidth="158.0" text="Adresse" textFill="#0fb3d1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="raisonsociallabel" layoutX="3.0" layoutY="60.0" prefHeight="23.0" prefWidth="158.0" text="Raison Social" textFill="#0fb3d1">
+               <font>
+                  <Font name="Times New Roman" size="20.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="773.0" layoutY="32.0" prefHeight="23.0" prefWidth="96.0" text="Compte" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comboxtype" layoutX="738.0" layoutY="74.0" onAction="#visible" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" />
+      <JFXTextField fx:id="numcompttbx" layoutX="743.0" layoutY="117.0" maxWidth="133.0" minWidth="133.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <JFXTextField fx:id="cleribtbx" layoutX="743.0" layoutY="218.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <Label layoutX="588.0" layoutY="75.0" prefHeight="23.0" prefWidth="140.0" text="Type de compte" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="125.0" prefHeight="23.0" prefWidth="140.0" text="N compte" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="172.0" prefHeight="23.0" prefWidth="140.0" text="N Agence" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="225.0" prefHeight="23.0" prefWidth="140.0" text="Cle rib" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="44.0" prefHeight="23.0" prefWidth="197.0" text="Numero CNI Client" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="numcniclitxt" layoutX="15.0" layoutY="75.0" maxWidth="149.0" minWidth="149.0" prefHeight="23.0" prefWidth="149.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <JFXButton buttonType="RAISED" layoutX="399.0" layoutY="567.0" onAction="#annuler" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: skyblue;" text="Annuler" textFill="#1d1e1e">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="fraislabel" layoutX="588.0" layoutY="292.0" prefHeight="23.0" prefWidth="140.0" text="Frais d'ouverture" textFill="#0fb3d1">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="fraisOuverturetxt" layoutX="746.0" layoutY="288.0" maxWidth="133.0" minWidth="133.0" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: white;" unFocusColor="#0b8ee5" />
+      <JFXComboBox fx:id="numagencecbx" layoutX="743.0" layoutY="171.0" onAction="#visible" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
